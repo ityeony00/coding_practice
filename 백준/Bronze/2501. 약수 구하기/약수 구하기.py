@@ -1,4 +1,4 @@
-# input으로 N, K 할당
+# input, map 사용하여 N, K 할당
 N, K = map(int, input().split())
 
 # 리스트 생성
@@ -10,7 +10,10 @@ for i in range(1, N + 1):
         # yaksu리스트에 i를 append
         yaksu_list.append(i)
 
+# yaksu_list 원소의 개수가 K보다 크거나 같을 때
 if len(yaksu_list) >= K:
+    # yaksu_list의 k번째 작은 수 출력
     print(yaksu_list[K - 1])
 else:
+    # 0출력
     print(0)
